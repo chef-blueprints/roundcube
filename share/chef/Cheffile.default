@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'ark'
+cookbook 'build-essential'
+cookbook 'cron'
+cookbook 'mysql'
+cookbook 'nginx'
+cookbook 'ntp'
+cookbook 'openssl'
+cookbook 'postfix'
+cookbook 'php'
+cookbook 'php-fpm'
+cookbook 'roundcube'
+cookbook 'sudo'
+cookbook 'system'

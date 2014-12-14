@@ -1,0 +1,25 @@
+{
+  "system": {
+    "short_hostname":"roundcube",
+    "domain_name":"localdomain",
+    "upgrade_packages":"false"
+  },
+  "roundcube": {
+    "database": {
+      "host":"replace_me",
+      "password":"replace_me"
+    }
+  },
+  "run_list": [
+    "recipe[ntp]",
+    "recipe[system]",
+    "recipe[system::update_package_list]",
+    "recipe[system::upgrade_packages]",
+    "recipe[system::install_packages]",
+    "recipe[cron]",
+    "recipe[sudo]",
+    "recipe[postfix]",
+    "recipe[roundcube]",
+    "recipe[roundcube::nginx]"
+  ]
+}
